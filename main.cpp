@@ -1,12 +1,8 @@
-#include <stdlib.h>
 #include <raylib.h>
 #include "raymath.h"
 #include "Player/Player.h"
 #include "Player/Projectile.h"
 #include "Environment/EnvironmentItem.h"
-
-
-#define MAX_BUILDINGS 100
 
 static const int screenWidth = 800;
 static const int screenHeight = 450;
