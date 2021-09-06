@@ -1,14 +1,15 @@
+#include <iostream>
 #include <raylib.h>
 #include "raymath.h"
-#include "Player/Player.h"
-#include "Player/Projectile.h"
-#include "Environment/EnvironmentItem.h"
+#include "player/Player.h"
+#include "player/Projectile.h"
+#include "environment/EnvironmentItem.h"
 
 static const int screenWidth = 800;
 static const int screenHeight = 450;
 static const int targetFPS = 60;
 
-static Player player = { 0 };
+static Player player =  { (Vector2){ 400, 280 } };
 static Camera2D camera = { 0 };
 static Projectile projectiles[MAX_SHOTS] = { 0 };
 static int shootRate = 0;
@@ -16,30 +17,29 @@ static int shootRate = 0;
 // TODO: Generate random environment
 static EnvironmentItem envItems[] = {
         {{ 0, 0, 1000, 400 }, 0, LIGHTGRAY },
-        {{ 0, 400, 1000, 200 }, 1, GRAY },
-        {{ 300, 200, 400, 10 }, 1, GRAY },
-        {{ 250, 300, 100, 10 }, 1, GRAY },
-        {{ 650, 300, 100, 10 }, 1, GRAY }
+        {{ 0, 300, 1000, 200 }, 1, GRAY }
 };
 static int envItemsLength = sizeof(envItems)/sizeof(envItems[0]);
 
-void cameraSetup() {
+void CameraSetup() {
     camera.target = player.position;
     camera.offset = (Vector2){ screenWidth/2.0f, screenHeight/2.0f };
     camera.rotation = 0.0f;
     camera.zoom = 1.0f;
 }
 
+void LoadTextures() {
+    player.LoadTextures();
+}
+
 void Initilize() {
+
     shootRate = 0;
 
     InitWindow(screenWidth, screenHeight, "2DGameCPP");
     SetTargetFPS(targetFPS);
-
-    cameraSetup();
-
-    Vector2 playerPosition = (Vector2){ 400, 280 };
-    player = { playerPosition, 0, ORANGE, false, KEY_D };
+    LoadTextures();
+    CameraSetup();
 
     for (auto & projectile : projectiles) {
         projectile.position = player.position;
@@ -128,8 +128,12 @@ void Draw() {
     EndMode2D();
     EndDrawing();
 }
+void UnloadTextures() {
+    player.UnloadTextures();
+}
 
 void Deinitialize() {
+    UnloadTextures();
     CloseWindow();
 }
 

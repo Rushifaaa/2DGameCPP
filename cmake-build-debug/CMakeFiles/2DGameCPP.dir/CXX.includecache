@@ -6,33 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/Users/jakub/CLionProjects/2DGameCPP/Environment/EnvironmentItem.h
+/Users/jakub/CLionProjects/2DGameCPP/environment/EnvironmentItem.h
 raylib.h
-/Users/jakub/CLionProjects/2DGameCPP/Environment/raylib.h
-
-/Users/jakub/CLionProjects/2DGameCPP/Player/Player.h
-raylib.h
-/Users/jakub/CLionProjects/2DGameCPP/Player/raylib.h
-../Environment/EnvironmentItem.h
-/Users/jakub/CLionProjects/2DGameCPP/Environment/EnvironmentItem.h
-Projectile.h
-/Users/jakub/CLionProjects/2DGameCPP/Player/Projectile.h
-
-/Users/jakub/CLionProjects/2DGameCPP/Player/Projectile.h
+/Users/jakub/CLionProjects/2DGameCPP/environment/raylib.h
 
 /Users/jakub/CLionProjects/2DGameCPP/main.cpp
-stdlib.h
+iostream
 -
 raylib.h
 -
 raymath.h
 /Users/jakub/CLionProjects/2DGameCPP/raymath.h
-Player/Player.h
-/Users/jakub/CLionProjects/2DGameCPP/Player/Player.h
-Player/Projectile.h
-/Users/jakub/CLionProjects/2DGameCPP/Player/Projectile.h
-Environment/EnvironmentItem.h
-/Users/jakub/CLionProjects/2DGameCPP/Environment/EnvironmentItem.h
+player/Player.h
+/Users/jakub/CLionProjects/2DGameCPP/player/Player.h
+player/Projectile.h
+/Users/jakub/CLionProjects/2DGameCPP/player/Projectile.h
+environment/EnvironmentItem.h
+/Users/jakub/CLionProjects/2DGameCPP/environment/EnvironmentItem.h
+
+/Users/jakub/CLionProjects/2DGameCPP/player/Player.h
+iostream
+-
+raylib.h
+/Users/jakub/CLionProjects/2DGameCPP/player/raylib.h
+../environment/EnvironmentItem.h
+/Users/jakub/CLionProjects/2DGameCPP/environment/EnvironmentItem.h
+Projectile.h
+/Users/jakub/CLionProjects/2DGameCPP/player/Projectile.h
+
+/Users/jakub/CLionProjects/2DGameCPP/player/Projectile.h
 
 /usr/local/Cellar/raylib/3.7.0/include/raylib.h
 stdarg.h

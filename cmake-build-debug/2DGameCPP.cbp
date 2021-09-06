@@ -82,19 +82,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jakub/CLionProjects/2DGameCPP/Environment/EnvironmentItem.h">
-			<Option target="2DGameCPP"/>
-		</Unit>
-		<Unit filename="/Users/jakub/CLionProjects/2DGameCPP/Player/Player.h">
-			<Option target="2DGameCPP"/>
-		</Unit>
-		<Unit filename="/Users/jakub/CLionProjects/2DGameCPP/Player/Projectile.h">
-			<Option target="2DGameCPP"/>
-		</Unit>
-		<Unit filename="/Users/jakub/CLionProjects/2DGameCPP/Player/Score.h">
+		<Unit filename="/Users/jakub/CLionProjects/2DGameCPP/environment/EnvironmentItem.h">
 			<Option target="2DGameCPP"/>
 		</Unit>
 		<Unit filename="/Users/jakub/CLionProjects/2DGameCPP/main.cpp">
+			<Option target="2DGameCPP"/>
+		</Unit>
+		<Unit filename="/Users/jakub/CLionProjects/2DGameCPP/player/Player.h">
+			<Option target="2DGameCPP"/>
+		</Unit>
+		<Unit filename="/Users/jakub/CLionProjects/2DGameCPP/player/Projectile.h">
+			<Option target="2DGameCPP"/>
+		</Unit>
+		<Unit filename="/Users/jakub/CLionProjects/2DGameCPP/player/Score.h">
 			<Option target="2DGameCPP"/>
 		</Unit>
 		<Unit filename="/Users/jakub/CLionProjects/2DGameCPP/CMakeLists.txt">
